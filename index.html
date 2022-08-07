@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Asher Brown 08/07/2022 -->
+<html lang="en">
+    <head>
+        <title>Score Card | Asher Brown </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+      <div id="wrapper">
+        <h1 id="header">SPORTS BALL </h1>
+        <div class="container">
+            
+            <div class="team">
+                <h3>HOME</h3>
+                <h2 class="score" id="home-score">0</h2>
+                <div>
+                    <button onclick="homeOne()">+1</button>
+                    <button onclick="homeTwo()">+2</button>
+                    <button onclick="homeThree()">+3</button>
+                </div>
+                <button class="goldButton" onclick="resetHome()">Reset</button>
+            </div> <!-- closes #home -->
+            
+            
+            
+            <div class="team">
+                <h3>GUEST</h3>
+                <h2 class="score" id="guest-score">0</h2>
+                <div>
+                    <button onclick="guestOne()">+1</button>
+                    <button onclick="guestTwo()">+2</button>
+                    <button onclick="guestThree()">+3</button>
+                </div> 
+                <button class="goldButton" onclick="resetGuest()">Reset</button>
+            </div> <!-- closes #guest -->
+            
+        </div> <!-- closes .container -->
+        
+         <button class="goldButton" onclick="newGame()" id="newGame"> NEW GAME </button>
+         
+         <footer>
+             <p>Created by Asher Brown <br>
+                <a href="mailto: asherrbrown@gmail.com">asherrbrown@gmail.com</a>
+             </p>
+         </footer>
+         
+        <script src="index.js"></script>
+      </div>
+    </body>
+</html>
